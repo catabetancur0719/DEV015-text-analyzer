@@ -1,6 +1,10 @@
+ // OBJETOS EN JS
 const analyzer = {  
-  getWordCount: (text) => {
+  getWordCount: (text) => { // parametro de una funcion
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    console.log(text);
+    // bucle for
+    // como hacer un contador en JS
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.

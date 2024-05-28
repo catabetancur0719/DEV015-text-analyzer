@@ -27,61 +27,6 @@ ul {
 
 }
 
-.rpalabras {
-    
-    border: 2px rgb(161, 159, 159) solid;
-    margin-right: 85%;  
-    margin-bottom: 7px;
-    width: 200px;
-    border-radius: 6px;
-}
-
-.rcaracteres {
-
-    
-    border: 2px rgb(161, 159, 159) solid;;
-    margin-right: 84%;  
-    margin-bottom: 7px;
-    width: 200px;
-    border-radius: 6px;
-}
-
-.sinEspacio{
-   
-    border: 2px rgb(161, 159, 159) solid;
-    margin-right: 84%;  
-    margin-bottom: 7px;
-    width: 200px;
-    border-radius: 6px;
-}
-
-.rnumeros {
-    
-    border: 2px rgb(161, 159, 159) solid;
-    margin-right: 85%;  
-    margin-bottom: 7px;
-    width: 200px;
-    border-radius: 6px;
-}
-
-.totalNumeros{
-    
-    border: 2px rgb(161, 159, 159) solid;
-    margin-right: 85%;  
-    margin-bottom: 7px;
-    width: 200px;
-    border-radius: 6px;
-}
-
-.longitud{
-    
-    border: 2px rgb(161, 159, 159) solid;
-    margin-right: 80%;  
-    margin-bottom: 7px;
-    width: 250px;
-    border-radius: 6px;
-}
-
 button{
     background-color: #ebc8b2;
     color: black;

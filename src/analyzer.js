@@ -1,25 +1,50 @@
- // OBJETOS EN JS
-const analyzer = {  
-  getWordCount: (text) => { // parametro de una funcion
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    console.log(text);
-    // bucle for
-    // como hacer un contador en JS
+const analyzer = {
+  getWordCount: (text) => {
+    const words = text.trim().split(/\s+/);
+    return words.length;
+        
   },
+  
+
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    if (!text) {
+      return 0;
+    }
+    return text.length;
   },
+
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    if (!text) {
+      return 0;
+    }
+    const cleanedText = text.replace(/\s|[^\w]/g, '');
+    return cleanedText.length;
   },
+
   getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    if (!text || text.trim() === "") {
+      return 0;
+    }
+    const words = text.trim().split(/\s+/);
+    const totalLength = words.reduce((sum, word) => sum + word.length, 0);
+    const averageLength = totalLength / words.length;
+    return parseFloat(averageLength.toFixed(2)); // Redondear a 2 decimales
   },
+
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    if (!text) {
+      return 0;
+    }
+    const numbers = text.match(/\d+/g);
+    return numbers ? numbers.length : 0;
   },
+
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    if (!text) {
+      return 0;
+    }
+    const numbers = text.match(/\d+/g);
+    return numbers ? numbers.reduce((sum, num) => sum + parseFloat(num), 0) : 0;
   },
 };
 

@@ -377,17 +377,17 @@ relacionados con cada objetivo de aprendizaje.
 
 * **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-  - [ ] La estudiante creó una cuenta en Github.
+  - [x] La estudiante creó una cuenta en Github.
 
-  - [ ] La estudiante configuró su cuenta de Github con una llave SSH.
+  - [x] La estudiante configuró su cuenta de Github con una llave SSH.
 
 * **Git: Control de versiones con git (clone, add, commit, push)**
 
-  - [ ] La estudiante creó un _fork_ para su proyecto.
+  - [x] La estudiante creó un _fork_ para su proyecto.
 
-  - [ ] La estudiante clonó su repositorio usando una llave SSH.
+  - [x] La estudiante clonó su repositorio usando una llave SSH.
 
-  - [ ] La estudiante creó _commits_ y los guardó en Github.
+  - [x] La estudiante creó _commits_ y los guardó en Github.
 
 * **GitHub: Despliegue con GitHub Pages**
 
@@ -495,29 +495,29 @@ logra agregando un atributo
 [`data-testid`](https://playwright.dev/docs/locators#locate-by-test-id).
 Por este motivo, es necesario agregar lo siguiente:
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de palabras_ debe tener un atributo
 `data-testid` con valor `word-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de caracteres_ debe tener un atributo
 `data-testid` con valor `character-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el
 _recuento de caracteres excluyendo espacios y signos de puntuación_
 debe tener un atributo
 `data-testid` con valor `character-no-spaces-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar el _recuento de números_ debe tener un atributo
 `data-testid` con valor `number-count`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar la _suma total de números_ debe tener un atributo
 `data-testid` con valor `number-sum`.
 
-* [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+* [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
 para mostrar la _longitud media de palabras_ debe tener un atributo
 `data-testid` con valor `word-length-average`.
 

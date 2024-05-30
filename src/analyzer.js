@@ -1,50 +1,35 @@
 const analyzer = {
   getWordCount: (text) => {
-    const words = text.trim().split(/\s+/);
-    return words.length;
+    const word = text.split(" ")
+    return word.length
+    //retornar el largo de text (string)
         
-  },
-  
+  },  
 
   getCharacterCount: (text) => {
-    if (!text) {
-      return 0;
-    }
-    return text.length;
+    return text.length
+    // retornar la cantidad de caracteres de text (string)
   },
 
   getCharacterCountExcludingSpaces: (text) => {
-    if (!text) {
-      return 0;
-    }
-    const cleanedText = text.replace(/\s|[^\w]/g, '');
-    return cleanedText.length;
+    const space = text.trim()
+    return space.length
   },
 
+
   getAverageWordLength: (text) => {    
-    if (!text || text.trim() === "") {
-      return 0;
-    }
-    const words = text.trim().split(/\s+/);
-    const totalLength = words.reduce((sum, word) => sum + word.length, 0);
-    const averageLength = totalLength / words.length;
-    return parseFloat(averageLength.toFixed(2)); // Redondear a 2 decimales
+    // retornar el promedio de palabras del text 
+   
   },
 
   getNumberCount: (text) => {
-    if (!text) {
-      return 0;
-    }
-    const numbers = text.match(/\d+/g);
-    return numbers ? numbers.length : 0;
+    
+    // retornar la cantidad de numeros
   },
 
   getNumberSum: (text) => {
-    if (!text) {
-      return 0;
-    }
-    const numbers = text.match(/\d+/g);
-    return numbers ? numbers.reduce((sum, num) => sum + parseFloat(num), 0) : 0;
+    //retornar la suma de numeros
+    
   },
 };
 

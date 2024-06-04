@@ -47,6 +47,8 @@ const analyzer = {
     return numbers ? numbers.reduce((sum, num) => sum + parseFloat(num), 0) : 0;
   },
 };
+
+
   
 export default analyzer;
   

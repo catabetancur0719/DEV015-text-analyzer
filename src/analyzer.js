@@ -31,8 +31,9 @@ const analyzer = {
   },
 
   getNumberCount: (text) => {
+    
     const numeros = [ ]
-    let words = text.split(" ")
+    const words = text.trim().split(" ")
     words.forEach ((word) => {
       //console.log(word)
       //console.log(typeof word,"word")
@@ -51,14 +52,7 @@ const analyzer = {
 
   getNumberSum: (text) => {
     
-    const numeros = text.match(/\d+/g); // Utiliza el parámetro 'text' en lugar de obtener el texto del elemento del DOM
-    let sumaTotal = 0;
-  
-    if (numeros) {
-      sumaTotal = numeros.reduce((total, numero) => total + parseInt(numero, 10), 0);
-    }
-  
-    return sumaTotal; // Devuelve la suma total en lugar de asignarla directamente al elemento del DOM
+    
   },
   
 };

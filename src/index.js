@@ -39,23 +39,38 @@ document.addEventListener("DOMContentLoaded", function () {
     numberSumView.textContent = `Suma total de números: ${sumaN}`;
 
     const longitudTotal = analyzer.getAverageWordLength(text);
-    longitudView.textContent = `Longitud media de las palabras: ${longitudTotal}`;
-
+    longitudView.textContent = `Longitud de las palabras: ${longitudTotal}`;
+        
   });
+   
+})
 
+document.addEventListener("DOMContentLoaded", function () {
   function clearButton() {
-    const contenido = document.getElementById('user-input',"contenedor");
-    const botonLimpiar = document.getElementById("reset-button");
+    document.querySelector("textarea").value = '';
+    document.querySelector("li[data-testid='word-count']").textContent = 'Palabras: 0';
+    document.querySelector("li[data-testid='character-count']").textContent = 'Caracteres: 0'
+    document.querySelector("li[data-testid='character-no-spaces-count']").textContent = 'Caracteres sin espacios: 0'
+    document.querySelector("li[data-testid='number-count']").textContent = 'Numeros: 0' 
+    document.querySelector ("li[data-testid='number-sum']").textContent = 'Suma total de números: 0'  
+    document.querySelector ("li[data-testid='word-length-average']").textContent = 'Longitud de las palabras: 0'
+   
+  }
+  const resetButton = document.getElementById("reset-button");
+  resetButton.addEventListener("click", function() {
+    clearButton(); 
+  });
+  //NO TOCAR NADA DE AQUI PARA ARRIBA
 
-    // Agregar evento de clic al botón de limpiar
-    botonLimpiar.addEventListener('click', function() {
-      // Borrar el contenido del elemento
-      contenido.textContent = '';
-    });
-  };
+
+  
+})
+
+
+
 
 //querySelector: se utiliza para encontrar y manipular objetos del DOM, se llaman por ID, class o etiqueta y devuelve solo el 1er valor
 //querySelectorById:igual al anterior pero llamando por ID
 //querySelectorAll: devuelve todos los elementos
 //eventTarget:algo que esucha eventos y desponder a ellos
-//addEventListener: se utiliza para decirle a un elemento que hacer(limpiar) cuando ocurre un evento(click) 
+//addEventListener: se utiliza para decirle a un elemento que hacer(limpiar) cuando ocurre un evento(click)

@@ -327,7 +327,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de bucles/ciclos (while, for, for..of)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
   para crear un bucle.
 
@@ -346,7 +346,7 @@ relacionados con cada objetivo de aprendizaje.
   - [x] El objeto `analyzer` contiene un método `getNumbersCount` para contar
   cúantos números hay en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
+  - [x] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
   longitud media de los números en un texto.
 
   - [x] El objeto `analyzer` contiene un método `getAverageWordLength` para
@@ -354,7 +354,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Pruebas unitarias (unit tests)**
 
-  - [ ] Pasan las pruebas unitarias.
+  - [x] Pasan las pruebas unitarias.
 
 * **Módulos de ECMAScript (ES Modules)**
 
@@ -366,7 +366,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de linter (ESLINT)**
 
-  - [ ] Al ejecutar el linter no se muestran errores de formato y estilo.
+  - [x] Al ejecutar el linter no se muestran errores de formato y estilo.
 
 * **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 

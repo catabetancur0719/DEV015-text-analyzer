@@ -24,7 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
     //textArea: llama al elemento HTML (ya esta declarado arriba) .value: btener el valor ingresado por el usuario.
 
     const contadorP = analyzer.getWordCount(text);
+    // se llama a la funcion getwordcount que esta dentro del analyzer y le pasamos text como argumento de la funcion.
     countWordView.textContent = `Palabras: ${contadorP}`;
+    // con el countWordView. textContent accedemos al html para cambiarlo
+    //palabras es una cadena de texto y se muestra en la web
+    // ${contadorP}` forma de insertar el valor de contadorP dentro de una cadena
 
     const contadorC = analyzer.getCharacterCount(text);
     countCharacterView.textContent = `Caracteres: ${contadorC}`;
@@ -60,10 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   resetButton.addEventListener("click", function() {
     clearButton(); 
   });
-  //NO TOCAR NADA DE AQUI PARA ARRIBA
-
-
-  
+   
 })
 
 

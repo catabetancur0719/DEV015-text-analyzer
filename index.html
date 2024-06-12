@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Analizador de texto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+<h1>Analizador de texto</h1>
+</header>
+
+<br>
+
+<main>
+<textarea name="user-input" rows="7" cols="40" placeholder="inserta texto aquí"></textarea>
+
+<br>
+
+<div id="recuento">
+  <ul>
+  
+    <li class="counter" data-testid="word-count">Palabras:</li>
+    <li class="counter" data-testid="character-count">Caracteres:</li>
+    <li class="counter" data-testid="character-no-spaces-count">Caracteres sin espacios:</li>
+    <li class="counter" data-testid="number-count">Números:</li>
+    <li class="counter" data-testid="number-sum">Suma total de números: </li>
+    <li class="counter" data-testid="word-length-average">Longitud de las palabras: </li>
+  
+  </ul>
+</div>
+<br>
+
+
+<button id="reset-button" onclick="clearButton()">Limpiar métricas</button>
+
+</main>
+
+<footer>
+  <p>Code by: Cata Betancur</p>
+</footer>  
+  <script src="index.js" type="module"></script>
+</body>
+</html>

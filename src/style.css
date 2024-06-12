@@ -31,7 +31,7 @@ textarea[name="user-input"] {
     margin: 0;
 
 }
-.recuento {
+#recuento {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   
